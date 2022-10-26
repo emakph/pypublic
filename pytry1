@@ -1,0 +1,28 @@
+db_user_name = "Reymark"
+username = input("Enter username: ")
+
+while True:
+    if db_user_name == username:
+        print("Main Menu(Basic Conversion)")
+        print("\t1. Kilo to Pounds")
+        print("\t2. Farenheit to Celsius")
+        print("\t3. Pesos to USD")
+        print("\t4. Exit/Go Back")
+
+        mmChoice = int(input("Enter choice: "))
+
+        if mmChoice == 1:
+            kil = int(input("Enter weight in Kilos: "))
+            print(kil, "kg is ",kil * 2.2046," in Pounds.")
+        elif mmChoice == 2:
+            far = int(input("Input Farenheit to convert in Celsius: "))
+            print(far, "is", ((far - 32) / 1.8000), "in Celsius.")
+        elif mmChoice == 3:
+            peso = float(input("Enter amont in PHP: "))
+            print(peso, "in converted in USD is", peso*0.017)
+        elif mmChoice == 4:
+            break
+        else:
+            print("Invalid Input")
+    else :
+        print("Invalid User")
